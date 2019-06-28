@@ -12,6 +12,7 @@ function getColor(imgSrc) {
     let dataLength;
     const rgb = {r: 0, g: 0, b: 0};
     let count = 0;
+    let backgroundColorStyle = document.querySelector('.colorMarker');
 
     if(!context) {
         return defaultColor;
@@ -32,7 +33,6 @@ function getColor(imgSrc) {
         }
 
         dataLength = data.data.length;
-        console.log(dataLength);
         
         while ((i += stepSize * 4) < dataLength) {
             ++count;
@@ -46,12 +46,27 @@ function getColor(imgSrc) {
         rgb.b = parseInt((rgb.b/count));
 
 
-        document.querySelector('.colorMarker').style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
-
-    }
+        getTextColor(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`);
+    };
 }
 
+function getTextColor(backgroundColor) {
+    const colorMarker =  document.querySelector('.colorMarker');
+    let rgb = colorMarker.style.backgroundColor = backgroundColor;
+    let colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    let brightness = 3;
 
+    console.log(colors, 'colors');
+    let r = colors[1];
+    let g = colors[2];
+    let b = colors[3];
 
-getColor('img/img1.jpg');
+    let ir = Math.floor((255 - r) * brightness);
+    let ig = Math.floor((255 - g) * brightness);
+    let ib = Math.floor((255 - b) * brightness);
+
+    return colorMarker.style.color = `rgb(${ir}, ${ig}, ${ib})`;
+}
+
+getColor('img/img4.jpg');
 };
