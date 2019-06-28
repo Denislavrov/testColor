@@ -46,10 +46,12 @@ function getColor(imgSrc) {
         rgb.b = parseInt((rgb.b/count));
 
 
-        console.log(rgb);
-        return rgb;
+        document.querySelector('.colorMarker').style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
+
     }
 }
 
-getColor('img/img2.jpg');
+
+
+getColor('img/img1.jpg');
 };
