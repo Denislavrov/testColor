@@ -17,17 +17,15 @@ function getColor(imgSrc) {
     if(!context) {
         return defaultColor;
     }
-
-    // height = canvas.height =  sticky.naturalHeight || sticky.offsetHeight || sticky.height;
-    // width = canvas.width = sticky.naturalWidth || sticky.offsetWidth  || sticky.width;
-
     sticky.src = imgSrc;
     sticky.onload = () => {
-        //context.drawImage(sticky, 0, 0, sticky.width, sticky.height);
-        context.drawImage(sticky, 0, 0, 300, 150);
+         //height = canvas.height =  sticky.naturalHeight || sticky.offsetHeight || sticky.height;
+         //width = canvas.width = sticky.naturalWidth || sticky.offsetWidth  || sticky.width;
+
+        context.drawImage(sticky, 0, 0, 298, 168);
 
         try {
-            data = context.getImageData(0, 0, 300, 150);
+            data = context.getImageData(0, 0, 298, 168);
         } catch (e) {
             return defaultColor;
         }
@@ -46,27 +44,58 @@ function getColor(imgSrc) {
         rgb.b = parseInt((rgb.b/count));
 
 
-        getTextColor(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`);
+       getTextColor(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`);
+        return backgroundColorStyle.style.backgroundColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.7)`;
     };
 }
 
+// function getTextColor(backgroundColor) {
+//     const colorMarker =  document.querySelector('.colorMarker');
+//     let rgb = colorMarker.style.backgroundColor = backgroundColor;
+//     let colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+//     let brightness = 3;
+//
+//     console.log(colors, 'colors');
+//     let r = colors[1];
+//     let g = colors[2];
+//     let b = colors[3];
+//
+//     let ir = Math.floor((255 - r) * brightness);
+//     let ig = Math.floor((255 - g) * brightness);
+//     let ib = Math.floor((255 - b) * brightness);
+//
+//     return colorMarker.style.color = `rgb(${ir}, ${ig}, ${ib})`;
+// }
+
 function getTextColor(backgroundColor) {
-    const colorMarker =  document.querySelector('.colorMarker');
-    let rgb = colorMarker.style.backgroundColor = backgroundColor;
-    let colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-    let brightness = 3;
+   const colorMarker = document.querySelector('.colorMarker');
+   let rgb = colorMarker.style.backgroundColor = backgroundColor;
+   let colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+   let r = colors[1];
+   let g = colors[2];
+   let b = colors[3];
 
-    console.log(colors, 'colors');
-    let r = colors[1];
-    let g = colors[2];
-    let b = colors[3];
 
-    let ir = Math.floor((255 - r) * brightness);
-    let ig = Math.floor((255 - g) * brightness);
-    let ib = Math.floor((255 - b) * brightness);
 
-    return colorMarker.style.color = `rgb(${ir}, ${ig}, ${ib})`;
+   let hexColor = getHexColor(r,g,b);
+   let firstNum = parseInt(hexColor.substr(1,1), 16);
+   console.log(firstNum);
+   if(firstNum > 4) {
+       return colorMarker.style.color = `#000`;
+   } else {
+       return colorMarker.style.color = `#fff`;
+   }
 }
 
-getColor('img/img4.jpg');
+function componentToHex(color) {
+    debugger;
+
+    let hex = parseInt(color).toString(16);
+    return hex.length === 1 ? "0" + hex : hex;
+}
+function getHexColor(r,g,b) {
+    return '#'+ componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+getColor('img/img6.jpg');
 };
