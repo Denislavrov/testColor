@@ -44,7 +44,8 @@ function getColor(imgSrc) {
         rgb.b = parseInt((rgb.b/count));
 
 
-       getTextColor(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`);
+       getTextColor(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`, 'colorMarker');
+       getButtonBackground(backgroundColorStyle.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`);
         return backgroundColorStyle.style.backgroundColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.7)`;
     };
 }
@@ -67,8 +68,10 @@ function getColor(imgSrc) {
 //     return colorMarker.style.color = `rgb(${ir}, ${ig}, ${ib})`;
 // }
 
-function getTextColor(backgroundColor) {
-   const colorMarker = document.querySelector('.colorMarker');
+function getTextColor(backgroundColor, textClassName) {
+
+    debugger;
+   const colorMarker = document.querySelector(`.${textClassName}`);
    let rgb = colorMarker.style.backgroundColor = backgroundColor;
    let colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
    let r = colors[1];
@@ -78,17 +81,18 @@ function getTextColor(backgroundColor) {
 
 
    let hexColor = getHexColor(r,g,b);
+   let hexColorInt = parseInt(hexColor.substr(1,6),16);
    let firstNum = parseInt(hexColor.substr(1,1), 16);
-   console.log(firstNum);
-   if(firstNum > 4) {
-       return colorMarker.style.color = `#000`;
-   } else {
-       return colorMarker.style.color = `#fff`;
-   }
+    /* цвет #A9A9A9	rgb(169, 169, 169) в 10- чной системе счисления для определения цвета текста*/
+   const blackLimiter = 11119017;
+    if(blackLimiter < hexColorInt) {
+        return colorMarker.style.color = `#000`;
+    } else {
+        return colorMarker.style.color = `#fff`;
+    }
 }
 
 function componentToHex(color) {
-    debugger;
 
     let hex = parseInt(color).toString(16);
     return hex.length === 1 ? "0" + hex : hex;
@@ -97,5 +101,19 @@ function getHexColor(r,g,b) {
     return '#'+ componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-getColor('img/img6.jpg');
+function getButtonBackground(backGroundColor) {
+    debugger;
+const colorMarker = document.querySelector('.canvas__button');
+const colors = backGroundColor.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+const colorsKoef = 20;
+console.log(colors);
+let r = parseInt(colors[1], 10) - colorsKoef;
+let g = parseInt(colors[2], 10) - colorsKoef;
+let b = parseInt(colors[3], 10) - colorsKoef;
+console.log(r,g,b);
+getTextColor(colorMarker.style.backgroundColor = `rgb(${r}, ${g}, ${b})`, 'canvas__button');
+return colorMarker.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+}
+
+getColor('img/img5.png');
 };

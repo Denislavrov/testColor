@@ -4,6 +4,12 @@
     <list default="true" id="1b72e920-bf28-40d1-ad21-fda13ef72373" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getDomainColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/getDomainColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/default/img6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/getDomainColor.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/getDomainColor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="305">
+              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -44,16 +50,24 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>;</find>
+      <find>#trg-b-##TrgUnID##</find>
+      <find>trg-b-close-overlay</find>
+      <find>trg-b-carousel__slides-arr {</find>
+      <find>trg-b-carousel__slides-list</find>
+      <find>.trg-b-carousel__slides-item-img</find>
+      <find>.trg-b-carousel__slides-item-header</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>!important;</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -62,9 +76,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/123" />
         <option value="$PROJECT_DIR$/123.html" />
+        <option value="$PROJECT_DIR$/123.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/getDomainColor.js" />
       </list>
     </option>
@@ -80,7 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,6 +106,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,15 +114,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/default" />
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -135,7 +152,8 @@
       <workItem from="1561551952396" duration="1872000" />
       <workItem from="1561634504740" duration="19421000" />
       <workItem from="1561809582837" duration="5866000" />
-      <workItem from="1562061278994" duration="3880000" />
+      <workItem from="1562061278994" duration="5103000" />
+      <workItem from="1562317435948" duration="8923000" />
     </task>
     <task id="LOCAL-00001" summary="testColor: init commit">
       <created>1561659581735</created>
@@ -165,17 +183,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561718128721</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="testColor: new logic text color">
+      <created>1562074943043</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562074943043</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31039000" />
+    <option name="totallyTimeSpent" value="41185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24071428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18214285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -187,7 +212,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32918397" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32780084" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32918397" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -204,37 +229,33 @@
     <MESSAGE value="testColor: test img" />
     <MESSAGE value="testColor: get text color" />
     <MESSAGE value="testColor: test black and white img" />
-    <option name="LAST_COMMIT_MESSAGE" value="testColor: test black and white img" />
+    <MESSAGE value="testColor: new logic text color" />
+    <option name="LAST_COMMIT_MESSAGE" value="testColor: new logic text color" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/img3.jpg">
+    <entry file="file://$PROJECT_DIR$/img/default/img3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/123">
+    <entry file="file://$PROJECT_DIR$/123" />
+    <entry file="file://$PROJECT_DIR$/123.html" />
+    <entry file="file://$PROJECT_DIR$/123.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/123.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="565">
+          <caret line="94" column="50" lean-forward="true" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="360">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getDomainColor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        <state relative-caret-position="305">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="109" />
         </state>
       </provider>
     </entry>
